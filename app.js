@@ -53,10 +53,10 @@ const renderCard = (data) => {
           <h5 class="card-title">${official}</h5>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">${capital}</li>
-          <li class="list-group-item">${region}</li>
-          <li class="list-group-item">${language}</li>
-          <li class="list-group-item">${currency}</li>
+        <li class="list-group-item"><i class="fa-solid fa-earth-europe"></i> ${region}</li>
+          <li class="list-group-item"><i class="fas fa-lg fa-landmark"></i> ${capital}</li>
+          <li class="list-group-item"><i class="fa-solid fa-language"></i> ${language}</li>
+          <li class="list-group-item"><i class="fa-solid fa-money-bill-wave"></i> ${currency}</li>
         </ul>
       </div>`;
 
