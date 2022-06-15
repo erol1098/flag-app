@@ -65,10 +65,8 @@ const renderCard = (data) => {
 };
 
 const renderError = (err) => {
-  document.querySelector(
-    "body"
-  ).innerHTML = `<h1 class="text-danger mt-3">${err.message}</h1>
-    <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2019/12/401-error-wordpress-featured-image.jpg" class="img-thumbnail mt-2">`;
+  document.querySelector("body").innerHTML = `
+    <img src="./img/error.jpg" class="img-thumbnail mt-2">`;
 };
 const getLanguage = (languages) => {
   return Object.values(languages).join(" ");
