@@ -19,7 +19,7 @@ const getAllCountryName = async () => {
   try {
     const res = await fetch(`https://restcountries.com/v3.1/all`);
     const data = await res.json();
-    const names = data.map((country) => country.name.official);
+    const names = data.map((country) => country.name.common);
     names.forEach((country) => renderSelect(country));
   } catch (error) {
     renderError(err);
